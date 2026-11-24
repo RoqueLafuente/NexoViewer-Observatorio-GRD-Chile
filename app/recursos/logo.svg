@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="44" viewBox="0 0 290 44">
+  <rect x="0" y="0" width="44" height="44" rx="10" fill="#1D5FAD"/>
+  <path d="M34 22h-5l-4 11-8-22-4 11h-5" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="56" y="20" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0E3A73">NexoViewer</text>
+  <text x="56" y="36" font-family="Inter, Arial, sans-serif" font-size="11" fill="#5A6A80">Observatorio GRD Chile · 2019–2025</text>
+</svg>

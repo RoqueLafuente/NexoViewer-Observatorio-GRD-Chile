@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 170" width="320" height="170" role="img" aria-label="Ilustración de un gatito jugando con un ovillo de lana que suelta el hilo">
+  <title>Gatito jugando con un ovillo de lana que suelta el hilo</title>
+  <style>
+    .gt-cola { transform-origin: 74px 132px; animation: gt-cola 2.6s ease-in-out infinite; }
+    .gt-pata { transform-origin: 150px 120px; animation: gt-pata 1.8s ease-in-out infinite; }
+    .gt-ovillo { transform-origin: 240px 128px; animation: gt-ovillo 1.8s ease-in-out infinite; }
+    .gt-hilo { stroke-dasharray: 130; stroke-dashoffset: 130; animation: gt-hilo 3.6s ease-in-out infinite; }
+    @keyframes gt-cola { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(9deg); } }
+    @keyframes gt-pata { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-16deg); } }
+    @keyframes gt-ovillo { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(10deg); } }
+    @keyframes gt-hilo { 0% { stroke-dashoffset: 130; } 65%, 90% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -130; } }
+    @media (prefers-reduced-motion: reduce) {
+      .gt-cola, .gt-pata, .gt-ovillo, .gt-hilo { animation: none; }
+      .gt-hilo { stroke-dashoffset: 0; }
+    }
+  </style>
+  <line x1="16" y1="152" x2="304" y2="152" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+  <!-- hilo: sale del ovillo hacia la derecha y se va soltando -->
+  <path class="gt-hilo" d="M258 138 C 272 154, 280 120, 292 144 S 306 150, 312 142" fill="none" stroke="#D6197A" stroke-width="3" stroke-linecap="round"/>
+  <!-- cola -->
+  <path class="gt-cola" d="M76 134 C 42 138, 30 100, 54 90" fill="none" stroke="#0E3A73" stroke-width="11" stroke-linecap="round"/>
+  <!-- cuerpo y cabeza -->
+  <ellipse cx="108" cy="122" rx="44" ry="30" fill="#1D5FAD"/>
+  <polygon points="128,70 134,42 152,62" fill="#1D5FAD"/>
+  <polygon points="150,62 168,42 174,72" fill="#1D5FAD"/>
+  <polygon points="134,64 137,50 146,62" fill="#8BBBEA"/>
+  <polygon points="156,62 166,50 168,67" fill="#8BBBEA"/>
+  <circle cx="151" cy="88" r="27" fill="#1D5FAD"/>
+  <!-- cara -->
+  <circle cx="142" cy="84" r="5" fill="#FFFFFF"/><circle cx="162" cy="84" r="5" fill="#FFFFFF"/>
+  <circle cx="144" cy="85" r="2.6" fill="#0E3A73"/><circle cx="164" cy="85" r="2.6" fill="#0E3A73"/>
+  <polygon points="148,93 156,93 152,98" fill="#8BBBEA"/>
+  <path d="M152 98 q-4 5 -8 3 M152 98 q4 5 8 3" fill="none" stroke="#8BBBEA" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M132 94 l-14 -3 M132 99 l-14 3 M172 94 l14 -3 M172 99 l14 3" stroke="#8BBBEA" stroke-width="1.3" stroke-linecap="round"/>
+  <!-- patas traseras y delantera quieta -->
+  <ellipse cx="86" cy="148" rx="16" ry="7" fill="#0E3A73"/>
+  <ellipse cx="126" cy="148" rx="14" ry="7" fill="#0E3A73"/>
+  <!-- pata que juega -->
+  <g class="gt-pata"><path d="M150 120 L 196 138" stroke="#1D5FAD" stroke-width="13" stroke-linecap="round"/><circle cx="198" cy="139" r="8" fill="#8BBBEA"/></g>
+  <!-- ovillo -->
+  <g class="gt-ovillo">
+    <circle cx="240" cy="128" r="23" fill="#D6197A"/>
+    <path d="M222 118 Q 240 108 258 120 M219 130 Q 240 120 261 132 M224 142 Q 240 134 256 143 M232 107 Q 224 128 234 150" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

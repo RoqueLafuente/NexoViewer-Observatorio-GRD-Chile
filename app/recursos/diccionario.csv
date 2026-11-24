@@ -1,0 +1,122 @@
+Tabla,Columna,Significado,Tipo
+perfil,ANIO,"Año de egreso (fecha de alta), de 2019 a 2025.",Entero
+perfil,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud).,Texto
+perfil,HOSPITAL,Nombre del hospital que atendió el egreso.,Texto
+perfil,REGION_HOSPITAL,Región donde está el hospital (no es la región de residencia del paciente).,Texto
+perfil,SS_HOSPITAL,Servicio de salud del que depende el hospital.,Texto
+perfil,EN_PANEL_7_ANIOS,Sí si el hospital informa los 7 años (2019–2025): son los 65 hospitales del panel.,Sí/No
+perfil,REGION_PACIENTE,"Región de residencia del paciente en el egreso, no la del hospital.",Texto
+perfil,TIPO_EPISODIO,"HOSPITALIZACIÓN (GRD con hospitalización), AMBULATORIO, INAGRUPABLE o SIN GRD.",Texto
+perfil,CAPITULO_CIE10,"Capítulo de la CIE-10 del diagnóstico principal, de 01 a 22.",Texto
+perfil,TRAMO_EDAD,"Edad del paciente en el egreso, en tramos de 5 años, por ejemplo «[60 - 64 años]».",Texto
+perfil,SEXO,"Sexo registrado: HOMBRE, MUJER o DESCONOCIDO.",Texto
+perfil,episodios,"Número de egresos (episodios) de la fila. Cada egreso es una hospitalización o atención ambulatoria, no una persona.",Entero
+perfil,fallecidos,Egresos cuyo alta fue por fallecimiento durante la hospitalización.,Decimal
+perfil,dias_estada,Suma de los días de estancia de los egresos de la fila (días-cama).,Decimal
+perfil,episodios_con_estancia,Egresos de la fila con estancia válida; sirve de divisor para promedios de estancia.,Entero
+perfil,peso_total,"Suma del peso GRD de los egresos de la fila. El peso GRD es relativo (1 = egreso promedio de referencia), no un monto en pesos.",Decimal
+perfil,severidad_mayor,Egresos de la fila con severidad 3 (mayor).,Decimal
+perfil,diag_secundarios,Suma de los diagnósticos secundarios registrados en los egresos de la fila; dividida por los egresos da el promedio.,Decimal
+perfil,diabetes,Egresos con diabetes entre sus diagnósticos secundarios (E10–E14).,Decimal
+perfil,hipertension,Egresos con hipertensión entre sus diagnósticos secundarios (I10–I13 e I15).,Decimal
+perfil,epoc,Egresos con EPOC (enfermedad pulmonar obstructiva crónica) entre sus diagnósticos secundarios (J44).,Decimal
+perfil,erc,Egresos con enfermedad renal crónica entre sus diagnósticos secundarios (N18).,Decimal
+mensual,mes,Primer día del mes de egreso.,Fecha
+mensual,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud).,Texto
+mensual,HOSPITAL,Nombre del hospital que atendió el egreso.,Texto
+mensual,REGION_HOSPITAL,Región donde está el hospital (no es la región de residencia del paciente).,Texto
+mensual,EN_PANEL_7_ANIOS,Sí si el hospital informa los 7 años (2019–2025): son los 65 hospitales del panel.,Sí/No
+mensual,TIPO_EPISODIO,"HOSPITALIZACIÓN (GRD con hospitalización), AMBULATORIO, INAGRUPABLE o SIN GRD.",Texto
+mensual,episodios,"Número de egresos (episodios) de la fila. Cada egreso es una hospitalización o atención ambulatoria, no una persona.",Entero
+mensual,fallecidos,Egresos cuyo alta fue por fallecimiento durante la hospitalización.,Decimal
+mensual,peso_total,"Suma del peso GRD de los egresos de la fila. El peso GRD es relativo (1 = egreso promedio de referencia), no un monto en pesos.",Decimal
+mensual,covid,Egresos del mes con COVID-19 registrado entre sus diagnósticos.,Decimal
+grd,ANIO,"Año de egreso (fecha de alta), de 2019 a 2025.",Entero
+grd,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud).,Texto
+grd,HOSPITAL,Nombre del hospital que atendió el egreso.,Texto
+grd,REGION_HOSPITAL,Región donde está el hospital (no es la región de residencia del paciente).,Texto
+grd,EN_PANEL_7_ANIOS,Sí si el hospital informa los 7 años (2019–2025): son los 65 hospitales del panel.,Sí/No
+grd,SEVERIDAD,"Severidad del egreso dentro de su GRD: 1 menor, 2 moderada, 3 mayor (0 = ambulatorio).",Entero
+grd,COD_GRD,"Código del GRD (Grupo Relacionado por el Diagnóstico), de seis dígitos.",Texto
+grd,DESCRIPCION_GRD,Nombre del GRD.,Texto
+grd,TIPO_GRD,"Tipo de GRD: MH y PH (hospitalización médica y quirúrgica), MA y PA (ambulatorios), u otro (inagrupable).",Texto
+grd,episodios,"Número de egresos (episodios) de la fila. Cada egreso es una hospitalización o atención ambulatoria, no una persona.",Entero
+grd,peso_total,"Suma del peso GRD de los egresos de la fila. El peso GRD es relativo (1 = egreso promedio de referencia), no un monto en pesos.",Decimal
+grd,dias_estada,Suma de los días de estancia de los egresos de la fila (días-cama).,Decimal
+grd,episodios_con_estancia,Egresos de la fila con estancia válida; sirve de divisor para promedios de estancia.,Entero
+grd,fallecidos,Egresos cuyo alta fue por fallecimiento durante la hospitalización.,Decimal
+flujos,ANIO,"Año de egreso (fecha de alta), de 2019 a 2025.",Entero
+flujos,REGION_PACIENTE,"Región de residencia del paciente en el egreso, no la del hospital.",Texto
+flujos,SS_PACIENTE,Servicio de salud de residencia del paciente en el egreso.,Texto
+flujos,PROVINCIA_PACIENTE,Provincia de residencia del paciente en el egreso.,Texto
+flujos,REGION_HOSPITAL,Región donde está el hospital (no es la región de residencia del paciente).,Texto
+flujos,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud).,Texto
+flujos,HOSPITAL,Nombre del hospital que atendió el egreso.,Texto
+flujos,TIPO_EPISODIO,"HOSPITALIZACIÓN (GRD con hospitalización), AMBULATORIO, INAGRUPABLE o SIN GRD.",Texto
+flujos,episodios,"Número de egresos (episodios) de la fila. Cada egreso es una hospitalización o atención ambulatoria, no una persona.",Entero
+flujos,peso_total,"Suma del peso GRD de los egresos de la fila. El peso GRD es relativo (1 = egreso promedio de referencia), no un monto en pesos.",Decimal
+estancia,ANIO,"Año de egreso (fecha de alta), de 2019 a 2025.",Entero
+estancia,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud).,Texto
+estancia,REGION_HOSPITAL,Región donde está el hospital (no es la región de residencia del paciente).,Texto
+estancia,SS_HOSPITAL,Servicio de salud del que depende el hospital.,Texto
+estancia,EN_PANEL_7_ANIOS,Sí si el hospital informa los 7 años (2019–2025): son los 65 hospitales del panel.,Sí/No
+estancia,TIPO_EPISODIO,"HOSPITALIZACIÓN (GRD con hospitalización), AMBULATORIO, INAGRUPABLE o SIN GRD.",Texto
+estancia,SEXO,"Sexo registrado: HOMBRE, MUJER o DESCONOCIDO.",Texto
+estancia,TRAMO_EDAD,"Edad del paciente en el egreso, en tramos de 5 años, por ejemplo «[60 - 64 años]».",Texto
+estancia,CAPITULO_CIE10,"Capítulo de la CIE-10 del diagnóstico principal, de 01 a 22.",Texto
+estancia,DIAS,Días de estancia del egreso (de ingreso a alta).,Entero
+estancia,episodios,Número de egresos con esa estancia en la fila.,Entero
+estancia_severidad,ANIO,"Año de egreso (fecha de alta), de 2019 a 2025.",Entero
+estancia_severidad,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud).,Texto
+estancia_severidad,REGION_HOSPITAL,Región donde está el hospital (no es la región de residencia del paciente).,Texto
+estancia_severidad,EN_PANEL_7_ANIOS,Sí si el hospital informa los 7 años (2019–2025): son los 65 hospitales del panel.,Sí/No
+estancia_severidad,SEVERIDAD,"Severidad del egreso dentro de su GRD: 1 menor, 2 moderada, 3 mayor (0 = ambulatorio).",Entero
+estancia_severidad,DIAS,Días de estancia del egreso (de ingreso a alta).,Entero
+estancia_severidad,episodios,Número de egresos con esa estancia en la fila.,Entero
+cronicas,ANIO,"Año de egreso (fecha de alta), de 2019 a 2025.",Entero
+cronicas,REGION_HOSPITAL,Región donde está el hospital (no es la región de residencia del paciente).,Texto
+cronicas,EN_PANEL_7_ANIOS,Sí si el hospital informa los 7 años (2019–2025): son los 65 hospitales del panel.,Sí/No
+cronicas,TRAMO_EDAD,"Edad del paciente en el egreso, en tramos de 5 años, por ejemplo «[60 - 64 años]».",Texto
+cronicas,SEXO,"Sexo registrado: HOMBRE, MUJER o DESCONOCIDO.",Texto
+cronicas,SEVERIDAD,"Severidad del egreso dentro de su GRD: 1 menor, 2 moderada, 3 mayor (0 = ambulatorio).",Entero
+cronicas,CRONICAS,"Combinación de las cuatro enfermedades crónicas registradas: DM diabetes, HTA hipertensión, EPOC y ERC enfermedad renal crónica, unidas por «+»; «Ninguna» si no tiene.",Texto
+cronicas,episodios,"Número de egresos (episodios) de la fila. Cada egreso es una hospitalización o atención ambulatoria, no una persona.",Entero
+cronicas,fallecidos,Egresos cuyo alta fue por fallecimiento durante la hospitalización.,Decimal
+comorbilidad,ANIO,"Año de egreso (fecha de alta), de 2019 a 2025.",Entero
+comorbilidad,REGION_HOSPITAL,Región donde está el hospital (no es la región de residencia del paciente).,Texto
+comorbilidad,EN_PANEL_7_ANIOS,Sí si el hospital informa los 7 años (2019–2025): son los 65 hospitales del panel.,Sí/No
+comorbilidad,TRAMO_EDAD,"Edad del paciente en el egreso, en tramos de 5 años, por ejemplo «[60 - 64 años]».",Texto
+comorbilidad,SEXO,"Sexo registrado: HOMBRE, MUJER o DESCONOCIDO.",Texto
+comorbilidad,SEVERIDAD,"Severidad del egreso dentro de su GRD: 1 menor, 2 moderada, 3 mayor (0 = ambulatorio).",Entero
+comorbilidad,COMBINACION,"Grupos de la lista de enfermedades crónicas (definición del equipo) presentes entre los diagnósticos secundarios, unidos por «+»; «Ninguna» si no tiene.",Texto
+comorbilidad,episodios,"Número de egresos (episodios) de la fila. Cada egreso es una hospitalización o atención ambulatoria, no una persona.",Entero
+comorbilidad,fallecidos,Egresos cuyo alta fue por fallecimiento durante la hospitalización.,Decimal
+establecimientos,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud); es el mismo código de las demás tablas.,Entero
+establecimientos,NOMBRE_DEIS,Nombre oficial del establecimiento en el catálogo del DEIS.,Texto
+establecimientos,COMUNA,Comuna donde está el establecimiento según el catálogo del DEIS.,Texto
+establecimientos,NIVEL_COMPLEJIDAD,Nivel de complejidad del establecimiento según el DEIS (alta o mediana complejidad).,Texto
+establecimientos,NIVEL_ATENCION,"Nivel de atención del establecimiento según el DEIS (por ejemplo, Tercer Nivel o Segundo Nivel).",Texto
+establecimientos,TIPO_ESTABLECIMIENTO,"Tipo de establecimiento según el DEIS (por ejemplo, hospital).",Texto
+establecimientos,CERTIFICACION,Estado de certificación del establecimiento informado por el DEIS.,Texto
+establecimientos,TIENE_URGENCIA,Si el establecimiento tiene servicio de urgencia según el DEIS (SI o NO).,Texto
+establecimientos,TIPO_URGENCIA,Tipo de urgencia que atiende el establecimiento según el DEIS.,Texto
+establecimientos,LATITUD,Latitud del establecimiento en grados decimales (catálogo del DEIS).,Decimal
+establecimientos,LONGITUD,Longitud del establecimiento en grados decimales (catálogo del DEIS).,Decimal
+camas,ANIO,"Año del registro mensual de camas (REM 20 del DEIS), de 2019 a 2025.",Entero
+camas,MES,"Mes del registro, de 1 a 12.",Entero
+camas,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud); es el mismo código de las demás tablas.,Entero
+camas,AREA_FUNCIONAL,"Área funcional del hospital que informa camas (por ejemplo, Área Médica o Área Cuidados Intensivos Adultos).",Texto
+camas,dias_cama_disponibles,Suma de los días-cama disponibles del mes en esa área; sirve de divisor para la ocupación.,Entero
+camas,dias_cama_ocupados,Suma de los días-cama ocupados del mes en esa área.,Entero
+camas,dias_estada,Suma de los días de estada de los egresos del mes en esa área (días-cama).,Entero
+camas,egresos,Egresos informados en el REM 20 para ese mes y área; no coinciden exactamente con los episodios GRD.,Entero
+camas,egresos_fallecidos,Egresos del mes en esa área cuyo alta fue por fallecimiento.,Entero
+camas,traslados,Traslados del mes en esa área hacia otro servicio o establecimiento.,Entero
+camas,camas_promedio,"Promedio de camas disponibles de esa área en ese mes; las camas del hospital suman todas sus áreas del mes, y para un año se promedian los meses.",Decimal
+comorbilidad_hospital,ANIO,"Año de egreso (fecha de alta), de 2019 a 2025.",Entero
+comorbilidad_hospital,COD_HOSPITAL,Código del hospital (código DEIS del Ministerio de Salud).,Texto
+comorbilidad_hospital,TRAMO_EDAD,"Edad del paciente en el egreso, en tramos de 5 años, por ejemplo «[60 - 64 años]».",Texto
+comorbilidad_hospital,SEVERIDAD,"Severidad del egreso dentro de su GRD: 1 menor, 2 moderada, 3 mayor.",Entero
+comorbilidad_hospital,COMBINACION,"Grupos de la lista de enfermedades crónicas (definición del equipo) presentes entre los diagnósticos secundarios, unidos por «+»; «Ninguna» si no tiene. Solo hospitalizaciones.",Texto
+comorbilidad_hospital,episodios,"Número de egresos (episodios) de la fila. Cada egreso es una hospitalización, no una persona.",Entero
+comorbilidad_hospital,fallecidos,Egresos cuyo alta fue por fallecimiento durante la hospitalización.,Decimal
